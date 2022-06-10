@@ -1,0 +1,163 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: #F8F9FD;
+        overflow: hidden;
+    }
+    
+    header {
+        padding: 2vh 0;
+        background-color: #1A2D34;
+        color: #ED008C;
+        display: flex;
+        align-items: center;
+    }
+    
+    #businessName {
+        color: #F8F9FD;
+        font-size: 1.4rem;
+        margin-left: 20rem;
+        margin-right: 15rem;
+        text-decoration: none;
+        font-family: Georgia, 'Times New Roman', Times;
+        font-weight: 800;
+    }
+    
+    #logIn {
+        font-size: 0.8rem;
+        margin-left: 5vw;
+    }
+    
+    .roundedBtn {
+        color: #F8F9FD;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        font-family: Georgia, 'Times New Roman', Times;
+        font-weight: 600;
+        padding: 8.5px 10px;
+        border-radius: 25px;
+        background-color: #ED008C;
+    }
+    
+    #nav-list {
+        display: flex;
+        list-style: none;
+    }
+    
+    .list-items {
+        margin: 0 12.5px;
+    }
+    
+    .dropdown .list-links {
+        color: #F8F9FD;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 1.1rem;
+        opacity: 0.6;
+        border: none;
+        outline: none;
+        background-color: inherit;
+    }
+    
+    .fa-caret-down {
+        opacity: 0.3;
+        font-size: 0.8rem;
+    }
+    
+    .dropdown:hover .list-links {
+        opacity: 1;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #1A2D34;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        float: none;
+        color: #F8F9FD;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        opacity: 0.6;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #1a2830;
+        opacity: 1;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    #pageTop {
+        display: flex;
+        background-color: #1A2D34;
+        color: #F8F9FD;
+        height: 40vh;
+        border-radius: 0 0 55% 55% /0% 0% 22.5% 22.5%;
+        padding: 5rem 20em 0 20rem;
+    }
+    
+    #pageTop #pageTopText {
+        width: 20vw;
+        margin-right: 30px;
+    }
+    
+    #pageTopText h1 {
+        font-size: 3.3rem;
+        padding: 0 2.5rem 0 0;
+    }
+    
+    #pageTopText p {
+        margin: 10px 0;
+    }
+    
+    #pageTop img {
+        width: 35vw;
+        height: 30vh;
+    }
+    
+    @media screen AND (max-width: 700px) {
+        header {
+            padding: 1vh 0;
+        }
+        header #businessName {
+            font-size: 0.75rem;
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+        #nav-list {
+            display: none;
+        }
+        #pageTop {
+            display: grid;
+            background-color: #1A2D34;
+            color: #F8F9FD;
+            border-radius: 0 0 55% 55% /0% 0% 22.5% 22.5%;
+            padding: 1rem 2rem 5rem 2rem;
+        }
+        #pageTop #pageTopText {
+            width: 100%;
+            margin-right: 0;
+            display: grid;
+            justify-items: center;
+        }
+        #pageTopText h1 {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        #pageTopText p {
+            text-align: center;
+        }
+    }
