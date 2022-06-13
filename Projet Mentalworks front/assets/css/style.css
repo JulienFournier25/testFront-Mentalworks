@@ -5,15 +5,16 @@
     
     body {
         background-color: #F8F9FD;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     
     header {
         padding: 2vh 0;
         background-color: #1A2D34;
-        color: #ED008C;
         display: flex;
         align-items: center;
+        position: sticky;
+        top: 0;
     }
     
     #businessName {
@@ -52,7 +53,7 @@
         margin: 0 12.5px;
     }
     
-    .dropdown .list-links {
+    .dropdown .listLinks {
         color: #F8F9FD;
         text-decoration: none;
         font-weight: 400;
@@ -68,7 +69,7 @@
         font-size: 0.8rem;
     }
     
-    .dropdown:hover .list-links {
+    .dropdown:hover .listLinks {
         opacity: 1;
     }
     
@@ -98,6 +99,10 @@
     
     .dropdown:hover .dropdown-content {
         display: block;
+    }
+    
+    #topPageSection {
+        background-color: white;
     }
     
     #pageTop {
@@ -131,11 +136,170 @@
     #pageTop img {
         width: 30vw;
         height: 45vh;
+        clip-path: inset(0px 15px);
+    }
+    
+    #aboutUs {
+        padding: 5rem 15rem;
+        color: black;
+        display: flex;
+    }
+    
+    #aboutUs div {
+        display: grid;
+        margin: 0 20px;
+    }
+    
+    #aboutUs div h3 {
+        margin: 15px 0;
+        font-family: Georgia, 'Times New Roman', Times;
+        font-weight: bolder;
+    }
+    
+    #pageMiddle {
+        padding: 5rem 10rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #pageMiddle h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+    }
+    
+    #pageMiddle .pageMiddleText {
+        text-align: center;
+    }
+    
+    #middlePageLinks {
+        margin: 30px 0;
+        justify-content: center;
+        display: flex;
+    }
+    
+    #middlePageLinks .linksActive {
+        margin: 0 10px;
+        border-radius: 5px;
+        padding: 0.5rem 0.5rem;
+    }
+    
+    #middlePageLinks .links {
+        margin: 0 10px;
+        border-radius: 5px;
+        padding: 0.5rem 0.5rem;
+        color: #ED008C;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        font-family: Georgia, 'Times New Roman', Times;
+        font-weight: 600;
+        background-color: inherit;
+    }
+    
+    #middlePageLinksContent1 {
+        display: flex;
+    }
+    
+    .middlePageLinksContent {
+        align-items: center;
+        padding: 0 7.5rem;
+    }
+    
+    .middlePageLinksContentTextContainer {
+        display: grid;
+        height: 50%;
+    }
+    
+    .middlePageLinksContentText h3 {
+        font-size: 1.85rem;
+    }
+    
+    .middlePageLinksContentText h3 {
+        position: relative;
+    }
+    
+    #middlePageLinksContent1 .underline::after {
+        content: '';
+        position: absolute;
+        background-color: #ED008C;
+        width: 6rem;
+        height: 13px;
+        display: block;
+        margin-top: -15px;
+        margin-left: 7.1rem;
+        z-index: -1;
+    }
+    
+    #middlePageLinksContent3 .underline::after {
+        content: '';
+        position: absolute;
+        background-color: #ED008C;
+        width: 8.3rem;
+        height: 13px;
+        display: block;
+        margin-top: -15px;
+        margin-left: 4.6rem;
+        z-index: -1;
+    }
+    
+    .middlePageLinksContentText p {
+        margin: 20px 0;
+        font-size: 1.1rem;
+    }
+    
+    .middlePageLinksContentPersona {
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 0px 0px 1px lightgray, 0px 0px 1px 2px lightgray, 0px 0px 20px 5px lightgray;
+    }
+    
+    #middlePageLinksContent3 .middlePageLinksContentPersona {
+        margin-right: 6rem;
+    }
+    
+    .middlePageLinksContentImg {
+        width: 100%;
+        max-height: 60vh;
+        clip-path: inset(25px 0px);
+        object-fit: cover;
+        margin: 0 50px;
+        object-position: center top;
+    }
+    
+    .middlePageLinksContentPersona img {
+        height: 7.5vh;
+        border-radius: 50%;
+        margin: 0.5rem 1rem;
+    }
+    
+    #middlePageLinksContent2,
+    #middlePageLinksContent3 {
+        display: none;
+    }
+    
+    .middlePagePersonaMobileImg {
+        display: none;
+    }
+    
+    #video {
+        padding: 15rem 0;
+        background-color: #1A2D34;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #F8F9FD;
+    }
+    
+    #video p {
+        font-size: 2rem;
     }
     
     @media screen AND (max-width: 700px) {
         header {
             padding: 1vh 0;
+            position: sticky;
+            top: 0;
         }
         header #businessName {
             font-size: 0.75rem;
@@ -166,8 +330,87 @@
         #pageTopText p {
             text-align: center;
         }
+        #pageTopText #pageTopBtn {
+            font-size: 0.9rem;
+            padding: 10px 15px;
+            border-radius: 50px;
+        }
         #pageTop img {
             width: 80vw;
             height: 20vh;
+        }
+        #aboutUs {
+            padding: 2.5rem 2.5rem;
+            display: grid;
+        }
+        #aboutUs div {
+            margin: 20px 0;
+        }
+        #aboutUs div h3 {
+            margin: 10px 0;
+        }
+        #aboutUs div img {
+            height: 70%;
+        }
+        #pageMiddle {
+            padding: 5rem 1rem;
+        }
+        .middlePageLinksContent {
+            padding: 0 1rem;
+        }
+        .middlePageLinksContentImg {
+            width: 100%;
+            max-height: 35vh;
+        }
+        .middlePagePersonaPcImg {
+            display: none;
+        }
+        .middlePagePersonaMobileImg {
+            display: block;
+        }
+        .middlePageLinksContentTextContainer {
+            text-align: center;
+            height: auto;
+        }
+        .middlePageLinksContentImg {
+            width: 100%;
+            max-height: 60vh;
+            margin: 0;
+        }
+        .middlePageLinksContentPersona p {
+            font-size: 0.9rem;
+        }
+        #middlePageLinksContent1 .underline::after {
+            content: '';
+            position: absolute;
+            background-color: #ED008C;
+            width: 6rem;
+            height: 13px;
+            display: block;
+            margin-top: -15px;
+            margin-left: 9.8rem;
+            z-index: -1;
+        }
+        #middlePageLinksContent3 .underline::after {
+            content: '';
+            position: absolute;
+            background-color: #ED008C;
+            width: 8.3rem;
+            height: 13px;
+            display: block;
+            margin-top: -15px;
+            margin-left: 10rem;
+            z-index: -1;
+        }
+        #video p {
+            font-size: 1.5rem;
+        }
+        #video {
+            padding: 10rem 2rem;
+            background-color: #1A2D34;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #F8F9FD;
         }
     }

@@ -9,59 +9,150 @@
 </head>
 
 <body>
-    <header>
+    <header id="navbar">
         <a href="index.html" id="businessName">Saint Vincent BTS 1</a>
         <nav>
             <ul id="nav-list">
                 <li class="list-items dropdown">
-                    <button class="list-links">Lien1&nbsp;<i class="fa-solid fa-caret-down"></i></button>
+                    <button class="listLinks" id="link1">Lien1&nbsp;<i class="fa-solid fa-caret-down"></i></button>
                     <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <a href="#">Lien 1</a>
+                        <a href="#">Lien 2</a>
+                        <a href="#">Lien 3</a>
                     </div>
                 </li>
                 <li class="list-items dropdown">
-                    <button class="list-links">Lien2&nbsp;<i class="fa-solid fa-caret-down"></i></button>
+                    <button class="listLinks" id="link2">Lien2&nbsp;<i class="fa-solid fa-caret-down"></i></button>
                     <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <a href="#">Lien 1</a>
+                        <a href="#">Lien 2</a>
+                        <a href="#">Lien 3</a>
                     </div>
                 </li>
                 <li class="list-items dropdown">
-                    <button class="list-links">Lien3&nbsp;<i class="fa-solid fa-caret-down"></i></button>
+                    <button class="listLinks" id="link3">Lien3&nbsp;<i class="fa-solid fa-caret-down"></i></button>
                     <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <a href="#">Lien 1</a>
+                        <a href="#">Lien 2</a>
+                        <a href="#">Lien 3</a>
                     </div>
                 </li>
                 <li class="list-items dropdown">
-                    <button class="list-links">Lien4&nbsp;<i class="fa-solid fa-caret-down"></i></button>
+                    <button class="listLinks" id="link4">Lien4&nbsp;<i class="fa-solid fa-caret-down"></i></button>
                     <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
+                        <a href="#">Lien 1</a>
+                        <a href="#">Lien 2</a>
+                        <a href="#">Lien 3</a>
                     </div>
                 </li>
             </ul>
         </nav>
         <a href="index.html" class="roundedBtn" id="logIn">Se connecter</a>
     </header>
-    <section id="pageTop">
-        <div id="pageTopText">
-            <h1>Lorem ipsum dolor sit amet.</h1>
-            <p>Pellentesque interdum nulla sed dapibus dictum. Nullam egestas massa sit amet felis luctus, in finibus est maximus. Pellentesque vitae arcu accumsan, cursus arcu consequat, ultrices odio. sapien faucibus bibendum.</p>
+    <section id="topPageSection">
+        <div id="pageTop">
+            <div id="pageTopText">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Pellentesque interdum nulla sed dapibus dictum. Nullam egestas massa sit amet felis luctus, in finibus est maximus. Pellentesque vitae arcu accumsan, cursus arcu consequat, ultrices odio. sapien faucibus bibendum.</p>
 
-            <button class="roundedBtn" id="pageTopBtn">Bouton CTA</button>
+                <button class="roundedBtn" id="pageTopBtn">Bouton CTA</button>
+            </div>
+            <img src="assets/img/step-1.png" alt="">
         </div>
-        <img src="assets/img/step-1.png" alt="">
+        <div id="aboutUs">
+            <div>
+                <img src="assets/img/i1.png" alt="">
+                <h3>Suit Your Style</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nisl in aliquam pulvinar. Sed viverra lacinia nulla, accumsan consequat orci.</p>
+            </div>
+            <div>
+                <img src="assets/img/i2.png" alt="">
+                <h3>Ut osuere molestie</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nisl in aliquam pulvinar. Sed viverra lacinia nulla, accumsan consequat orci.</p>
+            </div>
+            <div>
+                <img src="assets/img/i3.png" alt="">
+                <h3>Vestibulum ut erat consectetur</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nisl in aliquam pulvinar. Sed viverra lacinia nulla, accumsan consequat orci.</p>
+            </div>
+        </div>
     </section>
-    <div>
 
+    <section id="pageMiddle">
+        <div>
+            <h2>Aenean magna odio</h2>
+            <p class="pageMiddleText">Lorem ipsum dolor sit amet, consectetur aliquam adipiscing elit.</p>
+            <p class="pageMiddleText">Cras maximus nisl in aliquam pulvinar sit amet, consectetur aliquam adipiscing elit.</p>
+            <div id="middlePageLinks">
+                <button class="linksActive roundedBtn" id="middlePageLink1">Lien1</button>
+                <button class="links" id="middlePageLink2">Lien2</button>
+                <button class="links" id="middlePageLink3">Lien3</button>
+            </div>
+            <div id="middlePageLinksContent1" class="middlePageLinksContent">
+                <img src="assets/img/step-2.jpg" class="middlePageLinksContentImg middlePagePersonaPcImg" alt="">
+                <div class="middlePageLinksContentTextContainer">
+                    <div class="middlePageLinksContentText">
+
+                        <h3>Praesent vitae velit tristique <span class="underline">old alos</span></h3>
+                        <p>Cras maximus nisl in aliquam pulvinar sit amet, consectetur aliquam adipiscing elit.</p>
+                    </div>
+                    <div class="middlePageLinksContentPersona">
+                        <img src="assets/img/persona3.jpg" alt="">
+                        <p>“Lorem ipsum dolor sit amet, consectetur aliquam adipiscing ”</p>
+                    </div>
+                    <img src="assets/img/step-2.jpg" class="middlePageLinksContentImg middlePagePersonaMobileImg" alt="">
+
+                </div>
+
+            </div>
+            <div id="middlePageLinksContent2" class="middlePageLinksContent">
+                <div class="middlePageLinksContentTextContainer">
+                    <div class="middlePageLinksContentText">
+                        <h3>Dius et eros lorem</h3>
+                        <p>Cras maximus nisl in aliquam pulvinar sit amet, consectetur aliquam adipiscing elit.</p>
+                    </div>
+                    <div class="middlePageLinksContentPersona">
+                        <img src="assets/img/persona2.jpg" alt="">
+                        <p>“Lorem ipsum dolor sit amet”</p>
+                    </div>
+                    <img src="assets/img/step-3.jpg" class="middlePageLinksContentImg middlePagePersonaMobileImg" alt="">
+                </div>
+                <img src="assets/img/step-3.jpg" class="middlePageLinksContentImg middlePagePersonaPcImg" alt="">
+            </div>
+            <div id="middlePageLinksContent3" class="middlePageLinksContent">
+                <div class="middlePageLinksContentTextContainer">
+                    <div class="middlePageLinksContentText">
+                        <h3>Curabitur gravida metus at mi <span class="underline">malesuada</span></h3>
+                        <p>Cras maximus nisl in aliquam pulvinar sit amet, consectetur aliquam adipiscing elit.</p>
+                    </div>
+                    <div class="middlePageLinksContentPersona">
+                        <img src="assets/img/persona1.jpg" alt="">
+                        <p>“malesuada”</p>
+                    </div>
+                    <img src="assets/img/step-4.png" class="middlePageLinksContentImg middlePagePersonaMobileImg" alt="">
+                </div>
+                <img src="assets/img/step-4.png" class="middlePageLinksContentImg middlePagePersonaPcImg" alt="">
+            </div>
+        </div>
+    </section>
+    <div id="video">
+        <img src="assets/img/iplay.png" alt="">&emsp;
+        <p>“Nulla Venenatis magma fringilla”</p>
     </div>
+    <section id="pageEnd">
+        <div id="brand">
 
+        </div>
+        <div id="faq">
+
+        </div>
+        <footer>
+
+        </footer>
+    </section>
+
+
+    <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/3871b62d8e.js" crossorigin="anonymous"></script>
 </body>
 
